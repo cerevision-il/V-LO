@@ -1,9 +1,10 @@
 import React from 'react';
 
 function getStockLevel(product) {
-  const vals = Object.values(product.stock);
+  const stockObj = product.stock || { S: 10, M: 15, L: 10 }; // Fallback stock if missing
+  const vals = Object.values(stockObj);
   const total = vals.reduce((s, v) => s + v, 0);
-  const max = vals.length * 20;
+  const max = vals.length * 20 || 100;
   return { total, pct: Math.min(100, (total / max) * 100) };
 }
 
