@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { StoreProvider } from './context/StoreContext';
 import Toast      from './components/UI/Toast';
 import SideCart   from './components/UI/SideCart';
@@ -35,7 +35,7 @@ function StorefrontLayout({ children }) {
 export default function App() {
   return (
     <StoreProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Toast />
         <Routes>
           <Route path="/"                  element={<Navigate to="/home" replace />} />
@@ -49,7 +49,7 @@ export default function App() {
           <Route path="/admin/dashboard"   element={<Dashboard />} />
           <Route path="*"                  element={<Navigate to="/home" replace />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </StoreProvider>
   );
 }
