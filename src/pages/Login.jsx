@@ -36,7 +36,7 @@ export default function Login() {
       <div className="login-pg__visual">
         <div className="login-pg__visual-bg" />
         <div className="login-pg__visual-content">
-          <img src="/logo.png" alt="VÉLO logo" className="login-visual__logo" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="VÉLO logo" className="login-visual__logo" />
           <h2 className="login-visual__title">VÉLO<br />&amp; VINTAGE</h2>
           <p className="login-visual__sub">Premium urban streetwear. Retro aesthetics. Modern minimalism.</p>
         </div>

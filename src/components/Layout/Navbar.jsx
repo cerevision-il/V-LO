@@ -29,7 +29,7 @@ export default function Navbar() {
       <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
         <div className="navbar__inner">
           <Link to="/home" className="navbar__logo" aria-label="VÉLO & VINTAGE home">
-            <img src="/logo.png" alt="VÉLO logo mark" className="navbar__logo-img" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="VÉLO logo mark" className="navbar__logo-img" />
             <div className="navbar__logo-text">
               <span className="navbar__logo-velo">VÉLO</span>
               <span className="navbar__logo-sub">Vintage &amp; Co.</span>

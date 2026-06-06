@@ -32,7 +32,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="footer__logo">
-            <img src="/logo.png" alt="VÉLO logo" className="footer__logo-img" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="VÉLO logo" className="footer__logo-img" />
             <div>
               <span className="footer__logo-velo">VÉLO</span>
               <span className="footer__logo-sub">Vintage &amp; Co.</span>

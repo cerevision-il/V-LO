@@ -39,7 +39,7 @@ function AdminSidebar({ view, setView, orders, mobileSidebarOpen, setMobileSideb
       >
         {/* Logo */}
         <div className="admin-sidebar__logo">
-          <img src="/logo.png" alt="VÉLO logo" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="VÉLO logo" />
           <div>
             <span className="admin-sidebar__velo">VÉLO</span>
             <span className="admin-sidebar__sub">Admin Panel</span>

@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         <div className="hero__visual">
-          <img src="/hero.png" alt="VÉLO & VINTAGE editorial hero" className="hero__img" />
+          <img src={`${import.meta.env.BASE_URL}hero.png`} alt="VÉLO & VINTAGE editorial hero" className="hero__img" />
           <div className="hero__overlay" aria-hidden="true" />
         </div>
       </section>
